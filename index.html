@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>MSN Messenger XML Viewer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="page-content">
+      <article class="msn-messenger-window">
+        <header class="window-header">
+          <div class="status-bar">
+            <div class="window-name">
+              <img src="assets/imgs/chat-icon.png" alt="Chat icon" />&nbsp;John
+              Doe
+              <span>&lt;email@email.com&gt;</span>
+            </div>
+            <div class="window-actions">
+              <div class="window-action-btn">
+                <i class="fa-sharp fa-solid fa-window-minimize"></i>
+              </div>
+              <div class="window-action-btn">
+                <i class="fa-sharp fa-regular fa-square"></i>
+              </div>
+              <div class="window-action-btn">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <nav class="msn-actions">
+            <ul>
+              <li>
+                <img src="assets/imgs/user-add-icon.png" alt="Add icon" />
+              </li>
+              <li>
+                <img src="assets/imgs/user-files-icon.png" alt="Files icon" />
+              </li>
+              <li>
+                <img
+                  src="assets/imgs/user-phone-icon.png"
+                  alt="User phone icon"
+                />
+              </li>
+              <li>
+                <img src="assets/imgs/phone-icon.png" alt="Phone icon" />
+              </li>
+              <li>
+                <img src="assets/imgs/media-icon.png" alt="Media icon" />
+              </li>
+              <li>
+                <img src="assets/imgs/games-icon.png" alt="Games icon" />
+              </li>
+              <li>
+                <img src="assets/imgs/block-icon.png" alt="Block icon" />
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="content-wrapper">
+          <div id="output" class="message-history">
+            <div class="msn-message">
+              <div class="msg-from">
+                <span>Fulano diz:</span>
+                <span class="msg-date">22/01/2013 - 22/01/2013</span>
+              </div>
+              <div class="msg-text">Olá, como você está?</div>
+            </div>
+
+            <div class="msn-message">
+              <div class="msg-from">
+                <span>Beltrano diz:</span>
+                <span class="msg-date">22/01/2013 - 22:40:10</span>
+              </div>
+              <div class="msg-text">Estou bem, obrigado! E você?</div>
+            </div>
+
+            <div class="msn-message">
+              <div class="msg-from">
+                <span>Fulano diz:</span>
+                <span class="msg-date">22/01/2013 - 22/01/2013</span>
+              </div>
+              <div class="msg-text">Também estou bem. O que tem feito?</div>
+            </div>
+
+            <div class="msn-message">
+              <div class="msg-from">
+                <span>Beltrano diz:</span>
+                <span class="msg-date">22/01/2013 - 22:42:15</span>
+              </div>
+              <div class="msg-text">Tenho trabalhado bastante ultimamente.</div>
+            </div>
+
+            <div class="msn-message">
+              <div class="msg-from">
+                <span>Fulano diz:</span>
+                <span class="msg-date">22/01/2013 - 22:43:30</span>
+              </div>
+              <div class="msg-text">
+                Entendo. Espero que esteja sendo produtivo.
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="message-action-wrapper">
+            <div class="editor-actions">
+              <div class="editor-actions-btn">
+                <object
+                  data="assets/imgs/smile-icon.svg"
+                  type="image/svg+xml"
+                  class="editor-actions-btn-icon"
+                ></object>
+                <div class="btn-overlay"></div>
+              </div>
+              <div class="editor-actions-btn">
+                <object
+                  data="assets/imgs/blink-icon.svg"
+                  type="image/svg+xml"
+                  class="editor-actions-btn-icon"
+                ></object>
+                <div class="btn-overlay"></div>
+              </div>
+              <div class="editor-actions-btn btn-draw-attention">
+                <object
+                  data="assets/imgs/confuse-icon.svg"
+                  type="image/svg+xml"
+                  class="editor-actions-btn-icon"
+                ></object>
+                <div class="btn-overlay"></div>
+              </div>
+              <div class="editor-actions-btn">
+                <img src="assets/imgs/audio-icon.png" alt="Audio icon" />
+              </div>
+              <div class="editor-actions-btn">
+                <img
+                  src="assets/imgs/text-formating-icon.png"
+                  alt="Text formating icon"
+                />
+              </div>
+              <div class="editor-actions-btn">
+                <img
+                  src="assets/imgs/background-icon.png"
+                  alt="Background icon"
+                />
+              </div>
+            </div>
+            <div class="editor-container">
+              <div id="dropArea">
+                Arraste e solte o arquivo XML aqui,<br />
+                ou clique aqui para selecionar o arquivo.
+                <div id="error"></div>
+                <div id="loader"></div>
+              </div>
+            </div>
+            <div class="editor-controls">
+              <div class="editor-controls-group">
+                <button class="editor-btn font-family">A</button>
+                <button class="editor-btn">
+                  <img src="assets/imgs/pen-icon.png" alt="Pen icon" />
+                </button>
+              </div>
+              <div class="editor-controls-group">
+                <button type="button">Send</button>
+                <button type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside class="users-info">
+          <div class="user-info-wrap">
+            <div class="user-picture-wrapper">
+              <img src="assets/imgs/user-photo.jpg" class="user-picture" />
+            </div>
+            <div class="user-actions">
+              <img src="assets/imgs/webcam-icon.png" alt="Webcam icon" />
+              <div>&#x25BC;</div>
+            </div>
+          </div>
+          <div class="user-info-wrap">
+            <div class="user-picture-wrapper">
+              <img src="assets/imgs/user-photo.jpg" class="user-picture" />
+            </div>
+            <div class="user-actions">
+              <img src="assets/imgs/webcam-icon.png" alt="Webcam icon" />
+              <div>&#x25BC;</div>
+            </div>
+          </div>
+        </aside>
+      </article>
+      <footer class="windows-bar"></footer>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/a824eccf04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
